@@ -15,21 +15,8 @@ function SelecionarCopo() {
         setCopo(copoSelecionado)
     }
 
-    let backColorCopo = copo0
-    let backColorFundo = fundo0
-
-    if (copo == 0) {
-        backColorCopo = copo0
-        backColorFundo = fundo0
-    }
-    if (copo == 1) {
-        backColorCopo = copo1
-        backColorFundo = fundo1
-    }
-    if (copo == 2) {
-        backColorCopo = copo2
-        backColorFundo = fundo2
-    }
+    const imagemCopo = [copo0,copo1,copo2]
+    const imagemFundo = [fundo0,fundo1,fundo2]
 
     console.log(copo)
 
@@ -50,8 +37,8 @@ function SelecionarCopo() {
             </div>
 
             <div className="copoefundo">
-                <img className="copoefundo-copo" src={backColorCopo}></img>
-                <img className="copoefundo-fundo" src={backColorFundo}></img>
+                <img className="copoefundo-copo" src={imagemCopo[copo]}></img>
+                <img className="copoefundo-fundo" src={imagemFundo[copo]}></img>
             </div>
         </div>
     </section>
