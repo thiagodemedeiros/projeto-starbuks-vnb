@@ -4,10 +4,10 @@ import './App.sass'
 
 function App() {
   return (
-    <>
+    <body>
       <Header/>
       <SelecionarCopo/>
-    </>
+    </body>
   )
 }
 

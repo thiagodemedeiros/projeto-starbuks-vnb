@@ -6,6 +6,12 @@ function Header () {
     return (
         <section className="header">
             <img src={logo}></img>
+
+            <ul>
+                <li>Home</li>
+                <li>Novidades</li>
+                <li>Sobre</li>
+            </ul>
         </section>
     )
 }
