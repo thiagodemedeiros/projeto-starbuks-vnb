@@ -1,16 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+.selecionarcopo
+    display: flex
+    margin-top: 200px
+
+.selecionarcopo-texto
+    margin-right: -330px
+    margin-bottom: 280px
+    margin-left: 80px
+
+.selecionarcopo-texto button
+    font-family: "Poppins", serif
+    font-weight: 700
+    font-size: 24px
+    color: #fff
+    width: 300px
+    height: 66px
+    border-radius: 30px
+    border: none
+    background-color: #037143
+    margin-top: 30px
+
+.selecionarcopo-texto h2
+    font-family: "Poppins", serif
+    font-weight: 400
+    font-size: 64px
+    width: auto
+    margin-bottom: -30px
+
+.selecionarcopo-texto h3
+    font-family: "Poppins", serif
+    font-weight: 400
+    font-size: 64px
+    width: 705px
+
+.selecionarcopo-texto h3 span
+    font-family: "Poppins", serif
+    font-weight: 700
+    font-size: 96px
+    color: #037143
+
+.selecionarcopo-texto p
+    font-family: "Poppins", serif
+    font-weight: 400
+    font-size: 24px
+    width: 700px
+
+.selecionarcopo-itens
+    display: flex
+    flex-direction: row
+    align-items: flex-end
+    justify-content: right
+
+.copoefundo
+    position: relative
+    display: flex
+
+.copoefundo-copo
+    position: absolute
+    bottom: 100px
+    right: 60px
+    width: 488px
+    z-index: 2
+
+.copoefundo-fundo
+    width: 587px
+    height: 502px
+
 .selecionarcopo-buttons
     display: flex
     flex-direction: row
     align-items: center
     justify-content: center
     gap: 30px
-    border: 2px #f70ea9 solid
+    margin-bottom: 50px
+    margin-right: 10px
 
-.copo
-    width: 200px
-    height: 200px
+.selecionarcopo-buttons button
+    border: none
+    background-color: transparent
+    cursor: pointer
+    transform: rotate(-15deg)
+    transition: transform 0.3s ease-in-out
 
+.selecionarcopo-buttons button:hover
+    transform: rotate(0deg)
 
-.fundo
-    width: 300px
-    height: 300px
+.selecionarcopo-buttons button img
+    width: 100px
