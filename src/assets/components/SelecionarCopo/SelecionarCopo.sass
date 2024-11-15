@@ -4,10 +4,17 @@
     display: flex
     margin-top: 200px
 
+@keyframes entradaSelecionarCopo-texto
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
 .selecionarcopo-texto
     margin-right: -330px
     margin-bottom: 280px
     margin-left: 80px
+    animation: entradaSelecionarCopo-texto 1.5s ease-in
 
 .selecionarcopo-texto button
     font-family: "Poppins", serif
@@ -52,9 +59,16 @@
     align-items: flex-end
     justify-content: right
 
+@keyframes entradaCopoEFundo
+    0%
+        margin-right: -2000px
+    100%
+        margin-right: 0px
+
 .copoefundo
     position: relative
     display: flex
+    animation: entradaCopoEFundo 2s ease-in
 
 .copoefundo-copo
     position: absolute
