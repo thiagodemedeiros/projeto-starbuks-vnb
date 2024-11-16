@@ -7,18 +7,35 @@
 .novidades
     display: flex
     flex-direction: row
-    justify-content: center
+    justify-content: space-around
     align-items: center
-    gap: 300px
     width: 100vw
     height: 100vh
     background-color: #1E3932
     animation: novidadesOpacidade 0.5s ease-in-out
 
+@media (max-width: 1000px)
+    .novidades
+        flex-direction: column-reverse
+        padding: 30px 0px
+        gap: 50px
+
+    .novidades button
+        margin-bottom: 30px
+
+@media (max-width: 450px)
+    .novidades img
+        width: 300px
+
 .novidades-texto
     display: flex
     flex-direction: column
     color: #fff
+
+@media (max-width: 1000px)
+    .novidades-texto
+        text-align: center
+        align-items: center
 
 .novidades-texto h1
     font-family: "Poppins", serif
@@ -30,8 +47,25 @@
     font-weight: 400
     font-size: 64px
 
+@media (max-width: 470px)
+    .novidades-texto h2
+        line-height: 70px
+        margin: 10px 0px
+
 .novidades-texto p
     font-family: "Poppins", serif
     font-weight: 400
     font-size: 24px
     width: 640px
+
+@media (max-width: 1200px)
+    .novidades-texto p
+        width: 50vw
+
+@media (max-width: 1100px)
+    .novidades-texto p
+        width: 40vw
+
+@media (max-width: 650px)
+    .novidades-texto p
+        width: 80vw
