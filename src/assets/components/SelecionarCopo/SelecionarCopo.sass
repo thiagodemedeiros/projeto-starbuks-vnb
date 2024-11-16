@@ -12,10 +12,35 @@
     width: 100%
     height: 750px
     animation: selecionarCopoOpacidade 0.5s ease-in-out
+    // position: relative   
+
+@media (max-width: 1000px)
+    .selecionarcopo
+        flex-direction: column
+        align-items: center
+        height: auto
+        width: 350px
 
 .selecionarcopo-texto
     margin-right: -330px
     margin-left: 80px
+    // position: absolute
+
+@media (max-width: 1300px)
+    .selecionarcopo-texto
+        margin-left: 30px
+
+@media (max-width: 1000px)
+    .selecionarcopo-texto
+        display: flex
+        flex-direction: column
+        text-align: center
+        align-items: center
+        justify-content: center
+        margin-left: 0px
+        margin-right: 0px
+        width: 80vw
+
 
 .selecionarcopo-texto h2
     font-family: "Poppins", serif
@@ -24,11 +49,29 @@
     width: auto
     margin-bottom: -30px
 
+@media (max-width: 1300px)
+    .selecionarcopo-texto h2
+        font-size: 40px
+
+@media (max-width: 600px)
+    .selecionarcopo-texto h2
+        font-size: 25px
+
 .selecionarcopo-texto h3
     font-family: "Poppins", serif
     font-weight: 400
     font-size: 64px
     width: 705px
+
+@media (max-width: 1300px)
+    .selecionarcopo-texto h3
+        font-size: 50px
+        margin-top: 15px
+        width: auto
+
+@media (max-width: 600px)
+    .selecionarcopo-texto h3
+        font-size: 30px
 
 .selecionarcopo-texto h3 span
     font-family: "Poppins", serif
@@ -36,11 +79,27 @@
     font-size: 96px
     color: #037143
 
+@media (max-width: 1300px)
+    .selecionarcopo-texto h3 span
+        font-size: 60px
+
+@media (max-width: 600px)
+    .selecionarcopo-texto h3 span
+        font-size: 35px
+
 .selecionarcopo-texto p
     font-family: "Poppins", serif
     font-weight: 400
     font-size: 24px
     width: 700px
+
+@media (max-width: 1300px)
+    .selecionarcopo-texto p
+        width: 70vw
+
+@media (max-width: 600px)
+    .selecionarcopo-texto p
+        font-size: 18px
 
 .selecionarcopo-itens
     display: flex
@@ -48,17 +107,34 @@
     align-items: flex-end
     justify-content: right
 
-@keyframes entradaCopoEFundo
-    0%
-        margin-right: -2000px
-    100%
-        margin-right: 0px
+@media (max-width: 1300px)
+    .selecionarcopo-itens
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        padding-top: 40px
+        height: 800px
+
+@media (max-width: 1000px)
+    .selecionarcopo-itens
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        padding: 40px 0px
+        height: auto
+        
 
 .copoefundo
     position: relative
     display: flex
-    margin-left: 200px
-    // animation: entradaCopoEFundo 2s ease-in
+    margin-left: 50px
+    align-self: flex-end
+
+@media (max-width: 1000px)
+    .copoefundo
+        position: static
+        margin-left: 0px
 
 .copoefundo-copo
     position: absolute
@@ -67,17 +143,37 @@
     width: 488px
     z-index: 2
 
+@media (max-width: 1000px)
+    .copoefundo-copo
+        position: static
+        width: 80vw
+        right: 0px
+        bottom: 0px
+        z-index: 0
+
 .copoefundo-fundo
     width: 587px
     height: 502px
+
+@media (max-width: 1000px)
+    .copoefundo-fundo
+        display: none
 
 .selecionarcopo-buttons
     display: flex
     flex-direction: row
     align-items: center
-    justify-content: center
-    gap: 100px
+    justify-content: space-evenly
+    width: 200px
+    width: 15vw
     margin-bottom: 50px
+    z-index: 2
+
+@media (max-width: 1000px)
+    .selecionarcopo-buttons
+        justify-content: space-between
+        width: 80vw
+        z-index: 0
 
 .selecionarcopo-buttons button
     border: none
