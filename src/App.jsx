@@ -11,9 +11,9 @@ function App() {
       <Router>
         <Header/>
         <Routes>
-          {/* <Route path='/' element={<SelecionarCopo/>}/>
+          <Route path='/' element={<SelecionarCopo/>}/>
           <Route path='/Novidades' element={<Novidades/>}/>
-          <Route path='/Sobre' element={<Sobre/>}/> */}
+          <Route path='/Sobre' element={<Sobre/>}/>
         </Routes>
       </Router>
     </body>
