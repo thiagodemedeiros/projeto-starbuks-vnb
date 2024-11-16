@@ -7,13 +7,34 @@
     align-items: center
     padding: 20px 80px
     width: 100%
-    // border: #ff0000 solid 2px
+
+@media (max-width: 1000px)
+    .header
+        flex-direction: column
+        gap: 20px
 
 .header ul
     list-style: none
     display: flex
     flex-direction: row
     gap: 100px
+
+@media (max-width: 1000px)
+    .header ul
+        list-style: none
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        width: 80vw
+        gap: 0
+
+@media (max-width: 500px)
+    .header ul
+        list-style: none
+        display: flex
+        flex-direction: column
+        text-align: center
+        gap: 20px
 
 .header li
     cursor: pointer

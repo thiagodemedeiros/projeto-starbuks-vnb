@@ -1,5 +1,6 @@
 import React from "react";
 import './Header.sass'
+import { Link } from 'react-router-dom';
 import logo from './img/logo 1.png'
 
 function Header () {
@@ -8,9 +9,9 @@ function Header () {
             <img src={logo}></img>
 
             <ul>
-                <li>Home</li>
-                <li>Novidades</li>
-                <li>Sobre</li>
+                <li><Link to='/'>Home</Link></li>
+                <li><Link to='/Novidades'>Novidades</Link></li>
+                <li><Link to='/Sobre'>Sobre</Link></li>
             </ul>
         </section>
     )
