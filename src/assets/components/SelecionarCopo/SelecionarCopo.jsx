@@ -40,7 +40,7 @@ function SelecionarCopo() {
             <div className="copoefundo">
                 <img className="copoefundo-copo" src={imagemCopo[copo]}></img>
                 <img className="copoefundo-fundo" src={imagemFundo[copo]}></img>
-                <div className="copoefundo-fundo-mobile"></div>
+                {/* <div className="copoefundo-fundo-mobile"></div> */}
             </div>
         </div>
     </section>
